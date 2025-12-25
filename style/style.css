@@ -191,13 +191,45 @@ th, td {
     transform: scale(1.05);
 }
 
-
 @media (max-width: 768px) {
+    /* 1. Stack the Data Section (Chart on top of Table) - You already had this */
     .data-section {
         flex-direction: column;
     }
 
     .chart-wrapper {
         margin: 0 auto;
+        width: 100%; /* Ensure chart takes full width available */
+    }
+    
+    /* 2. Stack the Form Inputs vertically */
+    .form-card {
+        flex-direction: column; /* Stacks inputs top-to-bottom */
+        align-items: stretch;   /* Stretches inputs to fill width */
+        gap: 12px;              /* Adds breathing room between stacked items */
+    }
+
+    /* Reset margins for the button when stacked */
+    .form-card button {
+        margin-left: 0;
+        width: 100%;        /* Make button easy to tap (full width) */
+        padding: 12px;      /* Slightly larger touch target */
+    }
+
+    /* 3. Adjust Container Padding */
+    .container {
+        padding: 1.5rem;   /* Save screen space on mobile */
+        width: 95%;        /* Go slightly wider on small screens */
+    }
+
+    /* 4. Resize Large Typography */
+    .app-title {
+        font-size: 2rem;   /* Shrink title from 3rem to 2rem */
+        text-align: center;
+    }
+    
+    /* Center the motos (subtitles) */
+    .moto-container {
+        text-align: center;
     }
 }
