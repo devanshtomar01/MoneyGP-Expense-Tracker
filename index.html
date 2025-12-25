@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MoneyGP - Expense Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="app-title">Money<span class="highlight-gp">GP</span></h1>
+        <div class="moto-container">
+            <span class="moto-primary">STAY ON TRACK</span>
+            <span class="moto-secondary">AND DRIVE YOUR WEALTH</span>
+        </div>
+
+        <div class="form-card">
+            <input type="text" id="title" placeholder="Title">
+            <input type="number" id="amount" placeholder="Amount (₹)">
+            <select id="type">
+                <option value="expense">Expense</option>
+                <option value="income">Income</option>
+            </select>
+            <button id="addBtn">Add</button>
+        </div>
+
+        <div class="balance">
+            Balance: ₹<span id="balance">0</span>
+        </div>
+
+        <div class="data-section">
+
+            <div class="chart-wrapper" id="chartWrapper">
+                <div class="chart-container">
+                    <canvas id="expenseChart"></canvas>
+                </div>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Amount</th>
+                            <th>Type</th>
+                            <th>Time</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="expenseList"></tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts/script.js"></script>
+
+</body>
+</html>
