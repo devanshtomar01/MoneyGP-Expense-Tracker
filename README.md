@@ -52,6 +52,8 @@ moneygp-expense-tracker/
 
 Note: Ensure you have an internet connection so the Chart.js library and Google Fonts can load.
 
+Alternatively, you can view the live project here:  https://devanshtomar01.github.io/MoneyGP-Expense-Tracker/
+
 ## What I Learned
 
 This project pushed me to look beyond basic tutorials. I spent time researching:
