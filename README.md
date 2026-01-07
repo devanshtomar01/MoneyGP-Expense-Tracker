@@ -32,6 +32,7 @@ Key focus areas during development:
 
 ## Project Structure
 
+```
 moneygp-expense-tracker/
 │
 ├── index.html          # Main application structure
@@ -43,6 +44,7 @@ moneygp-expense-tracker/
 │   ├── favicon.png
 │   └── dashboard-preview.png
 └── README.md
+```
 
 ## How to Run
 
