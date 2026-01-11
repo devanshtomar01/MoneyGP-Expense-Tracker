@@ -65,9 +65,9 @@ This project pushed me to look beyond basic tutorials. I spent time researching:
 
 ## Future Improvements
 
-[ ] Add category selection (Food, Travel, Salary).
-[ ] Add a "Dark Mode" toggle.
-[ ] Export monthly reports as PDF.
+- [ ] Add category selection (Food, Travel, Salary).
+- [ ] Add a "Dark Mode" toggle.
+- [ ] Export monthly reports as PDF.
 
 ## Author
 
